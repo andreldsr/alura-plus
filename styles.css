@@ -1,0 +1,153 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    padding: 1em;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__descricao {
+    padding: 0 2em;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    height: 80%;
+}
+
+.secundario__imagem_media {
+    height: 55%;
+}
+
+.secundario__imagem_pequena {
+    height: 40%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.botao__pequeno {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    margin: 5em 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dispositivo__item {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 2em;
+}
+
+.rodape {
+    margin: 8em 12em;
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.lista__item {
+    margin: 1em;
+}
+
+.lista__link {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    text-align: center;
+    margin: 1em 0;
+    font-size: 14px;
+}
